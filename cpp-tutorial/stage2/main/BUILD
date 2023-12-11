@@ -6,10 +6,20 @@ cc_library(
     hdrs = ["hello-greet.h"],
 )
 
+cc_library(
+    name = "hello-greet2",
+    srcs = ["hello-greet2.cc"],
+    hdrs = ["hello-greet2.h"],
+    deps = [
+        ":hello-greet",
+    ],
+)
+
 cc_binary(
     name = "hello-world",
     srcs = ["hello-world.cc"],
     deps = [
         ":hello-greet",
+        ":hello-greet2",
     ],
 )
