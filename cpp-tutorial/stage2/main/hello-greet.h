@@ -19,5 +19,9 @@ void Test::test(const T &t) {
   std::cout << __LINE__ << std::endl;
 }
 
+template<>
+void Test::test(const int &t) {
+  std::cout << __LINE__ << std::endl;
+}
 
 #endif
