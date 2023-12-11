@@ -1,4 +1,5 @@
 #include "hello-greet.h"
+#include "hello-greet2.h"
 #include <ctime>
 #include <iostream>
 #include <string>
@@ -9,6 +10,7 @@ void print_localtime() {
 }
 
 int main(int argc, char** argv) {
+    hhhh();
     Test::test(3);
     Test::test(true);
   return 0;
